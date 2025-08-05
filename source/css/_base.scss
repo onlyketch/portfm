@@ -1,0 +1,26 @@
+$dark: #1A112F;
+$light: #CECFD0;
+$light-gray: #ACA7A9;
+$silver: #9990AE;
+$silver-light: #CAC3DA;
+$silver-dark: #6F6C8C;
+$blue: #4D43A3;
+$accent: #FF6B52;
+
+
+@mixin btn {
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    @include btn;
+}
