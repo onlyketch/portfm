@@ -1,0 +1,102 @@
+@import 'base';
+
+.hero {
+    position: relative;
+    padding-top: 164px;
+    padding-bottom: 110px;
+    background: linear-gradient(90deg, #FFEEED 18.27%, #E1F1FF 100%);
+
+		&__wrapper {
+           
+		}
+
+		&__utp {
+		}
+
+		&__title {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 78px;
+            background: linear-gradient(90deg, #5B409D 7.35%, #EE5860 93.27%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            max-width: 562px;
+            margin-bottom: 38px;
+		}
+
+		&__subtitle {
+            display: block;
+            font-size: 28px;
+            line-height: 28px;
+            font-weight: 500;
+            color: $silver;
+            margin-bottom: 40px;
+		}
+
+		&__icons {
+            display: flex;
+            margin-bottom: 40px;
+
+            &-icon {
+                width: 40px;
+                height: 40px;
+                margin-right: 19px;
+
+                .data__icon {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .i-git {
+                width: 43px;
+                height: 42px;
+            }
+		}
+
+		&__img {
+            position: absolute;
+            left: 60%;
+            bottom: 0;
+            width: 434px;
+            height: 535px;
+
+            &-photo {
+                width: 100%;
+                height: 100%;
+            }
+
+            &-experience {
+                position: absolute;
+                top: 50%;
+                right: 2px;
+                transform: translateY(-50%);
+                background-color: #FAFCFF;
+                box-shadow: -1px 4px 12.7px 2px rgba(77, 67, 163, 0.06);
+                border-radius: 6px;
+                padding: 16px 20px;
+                font-weight: 600;
+                color: $silver;
+                font-size: 20px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                
+                &-years {
+                    font-weight: 700;
+                    color: $blue;
+                    font-size: 32px;
+                    line-height: 32px;
+                    margin-right: 5px;
+                }
+
+            }
+		}
+
+        &__buttons {
+            display: flex;
+        }		
+}
+

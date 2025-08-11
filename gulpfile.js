@@ -36,16 +36,17 @@ gulp.task('img', function() {
 	return gulp.src('source/images/**/*.+(jpg|png|svg)')
 		.pipe(cache(imagemin([
 			imageminPngquant({
-				quality: [0.76, 0.8]
+				quality: [0.9, 1]
 			}),
 			mozJPEG({
-				quality: 80
+				quality: 80,
+				progressive: true
 			})
 		], {
 			verbose: true
 		})))
 		.pipe(gulp.dest('dist/images'))
-		.pipe(webp())
+		.pipe(webp({ quality: 90}))
 		.pipe(gulp.dest('dist/images'))
 });
 

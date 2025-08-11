@@ -32,7 +32,7 @@
                             <svg viewBox="0 0 40 40" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-vscode"></use></svg>
                         </div>
                         <div class="hero__icons-icon">
-                            <svg viewBox="0 0 43 42" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-git"></use></svg>
+                            <svg viewBox="0 0 43 42" class="data__icon i-git"><use xlink:href="icons/stack/icons.svg#i-git"></use></svg>
                         </div>
                         <div class="hero__icons-icon">
                             <svg viewBox="0 0 41 41" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-sass"></use></svg>
@@ -41,9 +41,9 @@
                             <svg viewBox="0 0 40 40" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-js"></use></svg>
                         </div>
                     </div>
-                    <div class="header__buttons">
-                        <button class="btn-details">Обсудить детали</button>
-                        <a href="#" class="btn-see-works">Посмотреть работы
+                    <div class="hero__buttons">
+                        <button class="btn-details"><span>Обсудить детали</span></button>
+                        <a href="#cases" class="btn-see-works">Посмотреть работы
                             <span class="btn-see-works__arrow">
                                 <svg viewBox="0 0 9 10" class="data__icon"><use xlink:href="icons/stack/icons.svg#arrow-see-works"></use></svg>
                             </span>
@@ -92,7 +92,7 @@
                         </svg>                      
                     </div>
                 </div>
-                <div class="advantages__row">
+                <div class="advantages__row advantages__row-end">
                     <div class="advantages__arrow advantages__arrow-left">
                         <svg width="325" height="77" viewBox="0 0 325 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 0C11.7277 0 14.86 2.54954 15.748 6H312V70.1719L321.313 60.8574C322.095 60.0765 323.362 60.0764 324.143 60.8574C324.924 61.6384 324.924 62.9055 324.143 63.6865L311.414 76.4141C310.633 77.1951 309.367 77.1951 308.586 76.4141L295.857 63.6865C295.076 62.9055 295.076 61.6384 295.857 60.8574C296.638 60.0764 297.905 60.0765 298.687 60.8574L308 70.1719V10H15.748C14.86 13.4505 11.7277 16 8 16C4.27231 16 1.14003 13.4505 0.251953 10H0V6H0.251953C1.14003 2.54954 4.27231 0 8 0Z" fill="url(#paint0_linear_13_1166)"/>
@@ -146,12 +146,12 @@
                             </svg>
                     </div>
                 </div>
-                <div class="advantages__row">
-                    <div class="advantages__arrow">
-                        <svg width="326" height="334" viewBox="0 0 326 334" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M319.646 0C323.155 0 326 2.81319 326 6.2832C326 9.75314 323.155 12.5664 319.646 12.5664C317.007 12.5663 314.745 10.9758 313.784 8.71191H17.0002V326.601L26.3136 317.287C27.0946 316.506 28.3617 316.506 29.1427 317.287C29.9232 318.068 29.9231 319.334 29.1427 320.115L16.4142 332.844C15.6333 333.624 14.3671 333.624 13.5861 332.844L0.857583 320.115C0.077172 319.334 0.0770178 318.068 0.857583 317.287C1.63857 316.506 2.90569 316.506 3.68668 317.287L13.0002 326.601V4.71191H313.492C314.198 2.00229 316.685 0.000165106 319.646 0Z" fill="url(#paint0_linear_13_1431)"/>
+                <div class="advantages__row advantages__row-end">
+                    <div class="advantages__arrow advantages__arrow-long">
+                        <svg width="326" height="336" viewBox="0 0 326 336" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M318 0C322.418 0 326 3.58172 326 8C326 12.4183 322.418 16 318 16C314.534 15.9999 311.583 13.7952 310.472 10.7119H17.0008V328.601L26.3142 319.287C27.0953 318.507 28.3625 318.506 29.1434 319.287C29.9236 320.068 29.9234 321.334 29.1434 322.115L16.4148 334.844C15.6339 335.624 14.3677 335.624 13.5867 334.844L0.858195 322.115C0.0775363 321.334 0.0775474 320.068 0.858195 319.287C1.63929 318.507 2.90642 318.506 3.6873 319.287L13.0008 328.601V6.71191H310.105C310.721 2.9063 314.02 0.000118845 318 0Z" fill="url(#paint0_linear_13_1431)"/>
                             <defs>
-                            <linearGradient id="paint0_linear_13_1431" x1="0.272219" y1="166.715" x2="326" y2="166.715" gradientUnits="userSpaceOnUse">
+                            <linearGradient id="paint0_linear_13_1431" x1="0.272219" y1="168.715" x2="326" y2="168.715" gradientUnits="userSpaceOnUse">
                             <stop offset="0.182692" stop-color="#F6D3D1"/>
                             <stop offset="1" stop-color="#C4E3FF"/>
                             </linearGradient>
@@ -184,6 +184,8 @@
                 </div>
             </div>
         </div>
+        <div class="advantages__blur advantages__blur_orange"></div>
+        <div class="advantages__blur advantages__blur_blue"></div>
     </section>
 
     <section class="about">
@@ -195,18 +197,22 @@
                     <p class="about__text">
                         Привет, я Андрей — frontend-разработчик <strong>с 10+ годами</strong> опыта в вёрстке. Создаю интерфейсы, используя современные инструменты: препроцессоры (Sass/Less), сборщики (Gulp/Webpack), оптимизированные ресурсы и CSS-анимации. Гарантирую соблюдение сроков, адекватное отношение к правкам и внимание к деталям. Верстаю с удовольствием — поэтому результат всегда качественный.
                     </p>
-                    <button class="btn-details">Обсудить детали</button>
-                </div>
-                <div class="about__right">
-                    <div class="about__photo">
-                        <img src="images/me.png" alt="Фото не загрузилось" loading="lazy">
-                    </div>
+                    <button class="btn-details"><span>Обсудить детали</span></button>
                 </div>
             </div>
         </div>
+        <div class="about__photo">
+            <div class="about__photo-main">
+                <img src="images/me.png" alt="Фото не загрузилось" loading="lazy">
+            </div>
+            <div class="about__photo-shadow"></div>
+            <svg viewBox="0 0 81 76" class="trinagle-stroke" width="81" height="76"><use xlink:href="icons/stack/icons.svg#triangle-stroke"></use></svg>
+            <svg viewBox="0 0 52 54" class="trinagle-fill" width="52" height="54"><use xlink:href="icons/stack/icons.svg#triangle-fill"></use></svg>
+            <svg viewBox="0 0 58 58" class="round-fill" width="58" height="58"><use xlink:href="icons/stack/icons.svg#round-fill"></use></svg>
+        </div>
     </section>
 
-    <section class="cases">
+    <section class="cases" id="cases">
         <div class="container">
             <h2>Кейсы</h2>
 
@@ -223,7 +229,7 @@
                     </p>
                     <div class="cases__items-item-info">
                         <span class="cases__items-item-years">2025</span>
-                        <a href="#" class="cases__items-item-link">Посмотреть кейс</a>
+                        <a href="#" target="_blank" class="cases__items-item-link"><span>Посмотреть кейс</span></a>
                     </div>
                 </div>
             </div>
@@ -235,8 +241,8 @@
                         Гарантирую соблюдение сроков, адекватное отношение к правкам и внимание к деталям. Верстаю с удовольствием — поэтому результат всегда качественный.
                     </p>
                     <div class="cases__items-item-info">
+                        <a href="#" target="_blank" class="cases__items-item-link"><span>Посмотреть кейс</span></a>
                         <span class="cases__items-item-years">2025</span>
-                        <a href="#" class="cases__items-item-link">Посмотреть кейс</a>
                     </div>
                 </div>
                 <div class="cases__items-item-preview">
@@ -255,7 +261,7 @@
                     </p>
                     <div class="cases__items-item-info">
                         <span class="cases__items-item-years">2024</span>
-                        <a href="#" class="cases__items-item-link">Посмотреть кейс</a>
+                        <a href="#" target="_blank" class="cases__items-item-link"><span>Посмотреть кейс</span></a>
                     </div>
                 </div>
             </div>
@@ -267,8 +273,8 @@
                         Гарантирую соблюдение сроков, адекватное отношение к правкам и внимание к деталям. Верстаю с удовольствием — поэтому результат всегда качественный.
                     </p>
                     <div class="cases__items-item-info">
+                        <a href="#" target="_blank" class="cases__items-item-link"><span>Посмотреть кейс</span></a>
                         <span class="cases__items-item-years">2024-2025</span>
-                        <a href="#" class="cases__items-item-link">Посмотреть кейс</a>
                     </div>
                 </div>
                 <div class="cases__items-item-preview">
@@ -287,7 +293,7 @@
                     </p>
                     <div class="cases__items-item-info">
                         <span class="cases__items-item-years">2024</span>
-                        <a href="#" class="cases__items-item-link">Посмотреть кейс</a>
+                        <a href="#" target="_blank" class="cases__items-item-link"><span>Посмотреть кейс</span></a>
                     </div>
                 </div>
             </div>
@@ -299,8 +305,8 @@
                         Гарантирую соблюдение сроков, адекватное отношение к правкам и внимание к деталям. Верстаю с удовольствием — поэтому результат всегда качественный.
                     </p>
                     <div class="cases__items-item-info">
+                        <a href="#" target="_blank" class="cases__items-item-link"><span>Посмотреть кейс</span></a>
                         <span class="cases__items-item-years">2025</span>
-                        <a href="#" class="cases__items-item-link">Посмотреть кейс</a>
                     </div>
                 </div>
                 <div class="cases__items-item-preview">
@@ -317,38 +323,96 @@
            <h2>Современный стек технологий</h2>
            <p class="technology__desc">
             Гарантирую соблюдение сроков, адекватное отношение к правкам и внимание к деталям.</p>
-            
-            <div class="technology__cards">
-                <div class="technology__cards-card">
-                    <svg viewBox="0 0 94 132" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-html"></use></svg>
+        </div>
+        <div class="technology__cards">
+                <div class="technology__cards-wrapper">
+                    <div class="technology__cards-card">
+                        <svg width="116" height="116" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M120.757 18.5991L64.241 119.659C63.0741 121.745 60.0762 121.758 58.8919 119.681L1.25579 18.6085C-0.034723 16.3461 1.90011 13.6053 4.46422 14.0639L61.0406 24.1761C61.4015 24.241 61.7711 24.2404 62.1318 24.1742L117.525 14.078C120.08 13.6123 122.024 16.332 120.757 18.5991Z" fill="url(#paint0_linear_126_2410)"/>
+                            <path d="M87.992 0.798213L46.1691 8.99341C45.835 9.05903 45.5322 9.23374 45.3081 9.49011C45.0841 9.74648 44.9515 10.07 44.9312 10.4099L42.3587 53.8607C42.3445 54.099 42.3861 54.3373 42.4802 54.5567C42.5742 54.7761 42.7181 54.9706 42.9004 55.1247C43.0828 55.2788 43.2985 55.3883 43.5305 55.4444C43.7626 55.5006 44.0045 55.5019 44.2371 55.4482L55.8813 52.761C56.9707 52.5095 57.9553 53.4692 57.7311 54.5647L54.2717 71.5054C54.0391 72.6455 55.1092 73.6202 56.2225 73.2818L63.4148 71.097C64.5296 70.7586 65.6011 71.7361 65.3652 72.8772L59.8676 99.4869C59.5235 101.152 61.7375 102.059 62.6605 100.632L63.2776 99.6791L97.3573 31.6662C97.9284 30.5275 96.9438 29.229 95.6937 29.4706L83.7073 31.7837C82.5813 32.0009 81.623 30.9519 81.9407 29.8503L89.7637 2.73117C90.0819 1.62676 89.1194 0.577331 87.992 0.798213Z" fill="url(#paint1_linear_126_2410)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_126_2410" x1="-98.7721" y1="834.445" x2="5996.4" y2="9112.22" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#41D1FF"/>
+                            <stop offset="1" stop-color="#BD34FE"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_126_2410" x1="2435.31" y1="226.25" x2="3689.2" y2="8827.69" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFEA83"/>
+                            <stop offset="0.08333" stop-color="#FFDD35"/>
+                            <stop offset="1" stop-color="#FFA800"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 94 132" width="94" height="132" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-html"></use></svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 40 40" width="107" height="107" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-vscode"></use></svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 98 138" width="98" height="138" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-css"></use></svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 121 124" width="115" height="115" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-sass"></use></svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 40 40" width="114" height="144" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-js"></use></svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 56 121" width="56" height="121" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-gulp"></use></svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 139 58" width="137" height="57" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-git2"></use></svg>
+                    </div>
                 </div>
-                <div class="technology__cards-card">
-                    <svg viewBox="0 0 40 40" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-vscode"></use></svg>
-                </div>
-                <div class="technology__cards-card">
-                    <svg viewBox="0 0 98 138" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-css"></use></svg>
-                </div>
-                <div class="technology__cards-card">
-                    <svg viewBox="0 0 121 124" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-angular"></use></svg>
-                </div>
-                <div class="technology__cards-card">
-                    <svg viewBox="0 0 40 40" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-js"></use></svg>
-                </div>
-                <div class="technology__cards-card">
-                    <svg viewBox="0 0 56 121" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-gulp"></use></svg>
-                </div>
-                <div class="technology__cards-card">
-                    <svg viewBox="0 0 139 58" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-git2"></use></svg>
+                <div class="technology__cards-wrapper">
+                    <div class="technology__cards-card">
+                        <svg width="116" height="116" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M120.757 18.5991L64.241 119.659C63.0741 121.745 60.0762 121.758 58.8919 119.681L1.25579 18.6085C-0.034723 16.3461 1.90011 13.6053 4.46422 14.0639L61.0406 24.1761C61.4015 24.241 61.7711 24.2404 62.1318 24.1742L117.525 14.078C120.08 13.6123 122.024 16.332 120.757 18.5991Z" fill="url(#paint0_linear_126_2410)"/>
+                            <path d="M87.992 0.798213L46.1691 8.99341C45.835 9.05903 45.5322 9.23374 45.3081 9.49011C45.0841 9.74648 44.9515 10.07 44.9312 10.4099L42.3587 53.8607C42.3445 54.099 42.3861 54.3373 42.4802 54.5567C42.5742 54.7761 42.7181 54.9706 42.9004 55.1247C43.0828 55.2788 43.2985 55.3883 43.5305 55.4444C43.7626 55.5006 44.0045 55.5019 44.2371 55.4482L55.8813 52.761C56.9707 52.5095 57.9553 53.4692 57.7311 54.5647L54.2717 71.5054C54.0391 72.6455 55.1092 73.6202 56.2225 73.2818L63.4148 71.097C64.5296 70.7586 65.6011 71.7361 65.3652 72.8772L59.8676 99.4869C59.5235 101.152 61.7375 102.059 62.6605 100.632L63.2776 99.6791L97.3573 31.6662C97.9284 30.5275 96.9438 29.229 95.6937 29.4706L83.7073 31.7837C82.5813 32.0009 81.623 30.9519 81.9407 29.8503L89.7637 2.73117C90.0819 1.62676 89.1194 0.577331 87.992 0.798213Z" fill="url(#paint1_linear_126_2410)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_126_2410" x1="-98.7721" y1="834.445" x2="5996.4" y2="9112.22" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#41D1FF"/>
+                            <stop offset="1" stop-color="#BD34FE"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_126_2410" x1="2435.31" y1="226.25" x2="3689.2" y2="8827.69" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFEA83"/>
+                            <stop offset="0.08333" stop-color="#FFDD35"/>
+                            <stop offset="1" stop-color="#FFA800"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 94 132" width="94" height="132" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-html"></use></svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 40 40" width="107" height="107" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-vscode"></use></svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 98 138" width="98" height="138" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-css"></use></svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 121 124" width="115" height="115" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-sass"></use></svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 40 40" width="114" height="144" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-js"></use></svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 56 121" width="56" height="121" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-gulp"></use></svg>
+                    </div>
+                    <div class="technology__cards-card">
+                        <svg viewBox="0 0 139 58" width="137" height="57" class="data__icon"><use xlink:href="icons/stack/icons.svg#i-git2"></use></svg>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
+        <div class="container container-footer">
             <div class="footer__left">
                 <a href="#" class="footer__logo">
-                    <svg viewBox="0 0 298 51" class="data__icon"><use xlink:href="icons/stack/icons.svg#logo-footer"></use></svg>
+                    <svg viewBox="0 0 298 51" width="298" height="51" class="data__icon"><use xlink:href="icons/stack/icons.svg#logo-footer"></use></svg>
                 </a>
                 <p class="iwork">
                     Работаю по договору с самозанятым или фриланс-биржу
@@ -358,14 +422,14 @@
                 <div class="footer__contacts">
                     <span class="footer__contacts-title">Обсудим задачу?</span>
                     <div class="footer__contacts-social">
-                        <a href="#" class="footer__contacts-social-link">
-                            <svg viewBox="0 0 34 29" class="data__icon"><use xlink:href="icons/stack/icons.svg#telegram"></use></svg>
+                        <a href="https://t.me/hotalert" class="footer__contacts-social-link footer__contacts-social-link-tg" target="_blank">
+                            <svg viewBox="0 0 34 29" width="34" height="29" class="data__icon i-telegram"><use xlink:href="icons/stack/icons.svg#telegram"></use></svg>
                         </a>
-                        <a href="#" class="footer__contacts-social-link">
-                            <svg viewBox="0 0 32 33" class="data__icon"><use xlink:href="icons/stack/icons.svg#whatsapp"></use></svg>
+                        <a href="https://wa.me/+79647602729" class="footer__contacts-social-link footer__contacts-social-link-wts" target="_blank">
+                            <svg viewBox="0 0 32 33" width="32" height="33" class="data__icon i-whatsapp"><use xlink:href="icons/stack/icons.svg#whatsapp"></use></svg>
                         </a>
-                        <a href="#" class="footer__contacts-social-link">
-                            <svg viewBox="0 0 52 11" class="data__icon"><use xlink:href="icons/stack/icons.svg#kwork"></use></svg>
+                        <a href="https://kwork.ru/user/samandrew?ref=16260940" class="footer__contacts-social-link footer__contacts-social-link-kwk" target="_blank">
+                            <svg viewBox="0 0 52 11" width="52" height="11" class="data__icon i-kwork"><use xlink:href="icons/stack/icons.svg#kwork"></use></svg>
                         </a>
                     </div>
                     <span class="footer__time">Отвечаю по будням, с 09:00 до 19:00</span>
@@ -374,17 +438,23 @@
                     <a href="#" class="footer__right-price-link">Цены на услуги</a>
                     <span class="footer__right-copy">Все права защищены © 2025 <a href="/">www.portfm.ru</a></span>
                 </div>
+                <div class="footer__right-photo">
+                    <img src="images/photo-footer.png" alt="Фото не загрузилось" loading="lazy">
+                    <div class="footer__right-blur"></div>
+                </div>
             </div>
             <button class="btn-up">
-                <svg viewBox="0 0 14 14" class="data__icon"><use xlink:href="icons/stack/icons.svg#arrow-up"></use></svg>
+                <svg viewBox="0 0 14 14" width="14" height="14"  class="data__icon"><use xlink:href="icons/stack/icons.svg#arrow-up"></use></svg>
             </button>
-            <a href="#" class="footer__mail-link">
-                <svg viewBox="0 0 20 16" class="data__icon"><use xlink:href="icons/stack/icons.svg#mail"></use></svg>
+            <a href="mailto:hotalert@vk.com" class="footer__mail-link">
+                <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M20 2C20 0.9 19.1 0 18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2ZM18 2L10 6.99L2 2H18ZM18 14H2V4L10 9L18 4V14Z"/>
+                </svg>
             </a>
         </div>
     </footer>
 
 
-    
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+@import 'base';
+
+.technology {
+        overflow: hidden;
+        padding-bottom: 230px;
+
+		&__desc {
+                  color: $silver;
+                  max-width: 545px;
+                  margin: 12px 0 0 33px;
+		}
+
+		&__cards {
+                  display: flex;
+                  margin-top: 70px;
+
+                  &-wrapper {
+                        display: flex;
+                        align-items: center;
+                        animation: logos-marquee 40s linear infinite;
+                  }
+
+                  &-card {
+                      background-color: #FFFFFF;
+                      box-shadow: -1px 4px 12.7px 2px rgba(77, 67, 163, 0.06);
+                      border-radius: 8px;
+                      width: 200px;
+                      height: 200px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin-right: 20px;
+                      flex-shrink: 0;
+                  }
+		}
+
+}
+
+@keyframes logos-marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
