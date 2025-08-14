@@ -5,10 +5,22 @@
     padding: 60px 0;
     position: relative;
 
+    @media (max-width: 1024px) {
+        padding: 42px 0 46px 0;
+    }
+
+    @media (max-width: 739px) {
+        padding: 32px 0;
+    }
+
     .container-footer {
         display: flex;
         justify-content: space-between;
         position: relative;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
     }
     
     &__left {
@@ -20,13 +32,51 @@
             color: $light;
             max-width: 316px;
             margin-top: 42px;
+
+            @media (max-width: 1179px) {
+                max-width: 190px;
+            }
+
+            @media (max-width: 1024px) {
+                display: none;
+            }
         }
 
     }
 
     &__logo {
+        display: block;
         width: 298px;
         height: 50px;
+
+        .data__icon {
+            width: 100%;
+            height: 100%;
+
+            @media (max-width: 739px) {
+                display: none;
+            }
+        }
+
+        .footer-logo-mob {
+            display: none;
+            width: 100%;
+            height: 100%;
+
+            @media (max-width: 739px) {
+                display: block;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            width: 263px;
+            height: 45px;
+        }
+
+        @media (max-width: 739px) {
+            width: 169px;
+            height: 26px;
+        }
     }
 
     &__right {
@@ -34,12 +84,40 @@
         flex: 0 1 570px;
         flex-shrink: 0;
 
+        @media (max-width: 1339px) {
+            flex: 0 1 470px;
+        }
+
+        @media (max-width: 1179px) {
+            flex: 0 1 370px;
+        }
+
+        @media (max-width: 1024px) {
+            flex: 0 1 auto;
+            padding-top: 34px;    
+        }
+
+        @media (max-width: 739px) {
+            padding-top: 40px;
+        }
+
         &-photo {
             position: absolute;
             bottom: -60px;
             left: -300px;
             width: 249px; 
             height: 315px;
+            user-select: none;
+            pointer-events: none;
+
+            @media (max-width: 1024px) {
+                bottom: -46px;
+                left: 54%;
+            }
+
+            @media (max-width: 739px) {
+                display: none;
+            }
 
             picture {
                position: relative;
@@ -64,6 +142,19 @@
             align-items: center;
             justify-content: space-between;
             margin-top: 83px;
+
+            @media (max-width: 1179px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            @media (max-width: 1024px) {
+                margin-top: 46px;
+            }
+
+            @media (max-width: 739px) {
+                margin-top: 28px;
+            }
         }
 
         &-price-link {
@@ -74,6 +165,14 @@
 
             &:hover {
                 color: #FFFFFF;
+
+                @media (max-width: 1024px) {
+                    color: $light;
+                }
+            }
+
+            @media (max-width: 739px) {
+               font-size: 13px; 
             }
         }
 
@@ -87,6 +186,19 @@
                 line-height: 24px;
                 color: $silver;
                 text-decoration: none;
+
+                @media (max-width: 739px) {
+                    font-size: 12px; 
+                }
+            }
+
+            @media (max-width: 1179px) {
+                margin-top: 4px;
+            }
+
+            @media (max-width: 739px) {
+               font-size: 12px;
+               margin-top: 32px; 
             }
         }
 
@@ -106,11 +218,25 @@
 
     &__contacts {
 
+        @media (max-width: 1024px) {
+            padding-left: 85px;
+        }
+
+        @media (max-width: 739px) {
+            padding-left: 0;
+        }
+
         &-title {
             font-weight: 700;
             font-size: 24px;
             line-height: 40px;
             color: $light;
+
+            @media (max-width: 739px) {
+                display: block;
+                font-size: 18px;
+                line-height: 18px;
+            }
         }
 
         &-social {
@@ -129,10 +255,28 @@
                 margin-right: 17px;
                 transition: all .3s ease-in;
 
+                @media (max-width: 739px) {
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 4px;
+                    margin-right: 10px; 
+                }
+
+                .data__icon {
+                    @media (max-width: 739px) {
+                        transform: scale(0.7);
+                    }
+                }
+
                 &-tg {
                     &:hover {
                         background-color: #18A4E7;
                         box-shadow: 0px 0px 3.8px rgba(24, 164, 231, 0.94);
+
+                        @media (max-width: 1024px) {
+                            background-color: $silver;
+                            box-shadow: none;
+                        }
                     }
                 }
 
@@ -140,6 +284,11 @@
                     &:hover {
                         background-color: #25CF66;
                         box-shadow: 0px 0px 3.8px rgba(37, 207, 102, 0.94);
+
+                        @media (max-width: 1024px) {
+                            background-color: $silver;
+                            box-shadow: none;
+                        }
                     }
                 }
 
@@ -147,6 +296,11 @@
                     &:hover {
                         background-color: #E7A518;
                         box-shadow: 0px 0px 3.8px rgba(231, 165, 24, 0.94);
+
+                        @media (max-width: 1024px) {
+                            background-color: $silver;
+                            box-shadow: none;
+                        }
                     }
                 }
 
@@ -177,6 +331,12 @@
         font-size: 13px;
         line-height: 24px;
         color: $silver;
+
+        @media (max-width: 739px) {
+            display: block;
+            font-size: 12px;
+            margin-top: -4px;
+        }
     }
 
     &__mail-link {
@@ -195,6 +355,14 @@
 
         &:hover {
             color: $light;
+
+            @media (max-width: 1024px) {
+                color: $silver;
+            }
+        }
+
+        @media (max-width: 739px) {
+            right: 24px;
         }
     }
 

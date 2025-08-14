@@ -5,13 +5,17 @@
     padding-top: 164px;
     padding-bottom: 110px;
     background: linear-gradient(90deg, #FFEEED 18.27%, #E1F1FF 100%);
+    overflow: hidden;
 
-		&__wrapper {
-           
-		}
+    @media (max-width: 1024px) {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
 
-		&__utp {
-		}
+    @media (max-width: 739px) {
+        padding-top: 94px;
+        padding-bottom: 50px;
+    }
 
 		&__title {
             font-weight: 700;
@@ -24,6 +28,20 @@
             text-fill-color: transparent;
             max-width: 562px;
             margin-bottom: 38px;
+
+            @media (max-width: 1024px) {
+                font-size: 40px;
+                line-height: 50px;
+                max-width: 350px;
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 739px) {
+                font-size: 26px;
+                line-height: 31px;
+                max-width: 226px;
+                margin-bottom: 12px;
+            }
 		}
 
 		&__subtitle {
@@ -33,16 +51,53 @@
             font-weight: 500;
             color: $silver;
             margin-bottom: 40px;
+
+            @media (max-width: 1339px) {
+                max-width: 460px;
+                line-height: 37px;
+            }
+
+            @media (max-width: 1024px) {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 24px;
+            }
+
+            @media (max-width: 739px) {
+                line-height: 22px;
+                max-width: 140px;
+                margin-bottom: 16px;
+            }
 		}
 
 		&__icons {
             display: flex;
             margin-bottom: 40px;
 
+            @media (max-width: 1024px) {
+                margin-bottom: 24px;
+            }
+
+            @media (max-width: 739px) {
+                margin-bottom: 16px;
+            }
+
             &-icon {
                 width: 40px;
                 height: 40px;
                 margin-right: 19px;
+
+                @media (max-width: 1024px) {
+                    width: 27px;
+                    height: 27px;
+                    margin-right: 13px;
+                }
+
+                @media (max-width: 739px) {
+                    width: 21px;
+                    height: 21px;
+                    margin-right: 10px;
+                }
 
                 .data__icon {
                     width: 100%;
@@ -53,6 +108,16 @@
             .i-git {
                 width: 43px;
                 height: 42px;
+
+                @media (max-width: 1024px) {
+                    width: 29px;
+                    height: 29px;
+                }
+
+                @media (max-width: 739px) {
+                    width: 23px;
+                    height: 23px;
+                }
             }
 		}
 
@@ -62,6 +127,23 @@
             bottom: 0;
             width: 434px;
             height: 535px;
+
+            @media (max-width: 1339px) {
+                width: 402px;
+                height: 496px;
+            }
+
+            @media (max-width: 1024px) {
+               width: 289px;
+               height: 356px;
+               left: 56%; 
+            }
+
+            @media (max-width: 739px) {
+                width: 150px;
+                height: 185px;
+                left: 54%;
+            }
 
             &-photo {
                 width: 100%;
@@ -83,6 +165,22 @@
                 line-height: 20px;
                 display: flex;
                 align-items: center;
+
+                @media (max-width: 1024px) {
+                    font-size: 13px;
+                    line-height: 13px;
+                    padding: 10px 13px;
+                    border-radius: 4px;
+                }
+
+                @media (max-width: 739px) {
+                    font-size: 10px;
+                    line-height: 10px;
+                    padding: 6px 8px;
+                    border-radius: 2px;
+                    right: -12px;
+                    top: 56%;
+                }
                 
                 &-years {
                     font-weight: 700;
@@ -90,6 +188,19 @@
                     font-size: 32px;
                     line-height: 32px;
                     margin-right: 5px;
+
+                    @media (max-width: 1024px) {
+                        font-size: 21px;
+                        line-height: 21px;
+                        margin-right: 4px;
+                    }
+
+                    @media (max-width: 739px) {
+                        font-size: 13px;
+                        line-height: 13px;
+                        padding-bottom: 2px;
+                        margin-right: 3px;
+                    }
                 }
 
             }

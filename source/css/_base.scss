@@ -33,6 +33,14 @@ body {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 70px;
+
+    @media (max-width: 1024px) {
+        padding: 0 42px;
+    }
+
+    @media (max-width: 739px) {
+        padding: 0 24px;
+    }
 }
 
 h2 {
@@ -51,6 +59,22 @@ h2 {
         background-color: $accent;
         border-radius: 2px;
         margin-right: 17px;
+
+        @media (max-width: 739px) {
+            width: 12px;
+            height: 12px;
+            margin-right: 12px; 
+        }
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    @media (max-width: 739px) {
+        font-size: 18px;
+        line-height: 22px;
     }
 }
 
@@ -68,6 +92,18 @@ h2 {
     border-radius: 4px;
     z-index: 10;
     transition: all .3s ease-in;
+
+    @media (max-width: 1024px) {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 14px 28px;
+    }
+
+    @media (max-width: 739px) {
+        font-size: 13px;
+        line-height: 13px;
+        padding: 12px 16px;
+    }
 
     &::before {
         content: '';
@@ -90,10 +126,19 @@ h2 {
     &:hover {
         background-color: #FB5033;
         box-shadow: 0px 1px 7px 2px rgba(255, 189, 67, 0.3);
+
+        @media (max-width: 1024px) {
+           background-color: #FF6B52;
+           box-shadow: none; 
+        }
     }
 
     &:hover &::before {
         background: linear-gradient(180deg, #F8732C 0%, rgba(255, 143, 82, 0.09) 100%);
+
+        @media (max-width: 1024px) {
+            background: linear-gradient(180deg, #FF8F52 0%, rgba(255, 143, 82, 0.09) 100%);
+        }
     }
 }
 
@@ -108,6 +153,10 @@ h2 {
     color: $blue;
     text-decoration: none;
     margin-left: 46px;
+
+    @media (max-width: 1339px) {
+       margin-left: 32px; 
+    }
 
 	&__arrow {
         display: flex;
@@ -128,6 +177,10 @@ h2 {
     &:hover &__arrow {
         animation: fly 1s ease-out infinite;
     }
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
 }
 
 .btn-up {
@@ -145,6 +198,10 @@ h2 {
 
     &:hover {
         opacity: 0.9;
+    }
+
+    @media (max-width: 1024px) {
+        display: none;
     }
 }
 

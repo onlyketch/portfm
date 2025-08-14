@@ -4,34 +4,97 @@
         overflow: hidden;
         padding-bottom: 230px;
 
+        @media (max-width: 1024px) {
+            padding-bottom: 160px;
+        }
+
+        @media (max-width: 739px) {
+            padding-bottom: 68px;
+        }
+
+        &__title {
+            @media (max-width: 739px) {
+                align-items: flex-start;
+            }
+
+            &::before {
+                @media (max-width: 739px) {
+                    margin-top: 5px;
+                }
+            }
+        }
+
 		&__desc {
-                  color: $silver;
-                  max-width: 545px;
-                  margin: 12px 0 0 33px;
+            color: $silver;
+            max-width: 545px;
+            margin: 12px 0 0 33px;
+
+            @media (max-width: 1024px) {
+                margin: 8px 0 0 33px;
+                font-size: 16px;
+                line-height: 22px;
+                max-width: 480px;
+            }
+
+            @media (max-width: 739px) {
+                font-size: 14px;
+                line-height: 20px;
+                max-width: 240px;
+                margin: 12px 0 0 24px;
+            }
 		}
 
 		&__cards {
+            display: flex;
+            margin-top: 70px;
+
+            @media (max-width: 1024px) {
+                margin-top: 40px;
+            }
+
+            @media (max-width: 739px) {
+                margin-top: 32px;
+            }
+
+            &-wrapper {
                   display: flex;
-                  margin-top: 70px;
+                  align-items: center;
+                  animation: logos-marquee 40s linear infinite;
+            }
 
-                  &-wrapper {
-                        display: flex;
-                        align-items: center;
-                        animation: logos-marquee 40s linear infinite;
-                  }
+            &-card {
+                background-color: #FFFFFF;
+                box-shadow: -1px 4px 12.7px 2px rgba(77, 67, 163, 0.06);
+                border-radius: 8px;
+                width: 200px;
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 20px;
+                flex-shrink: 0;
 
-                  &-card {
-                      background-color: #FFFFFF;
-                      box-shadow: -1px 4px 12.7px 2px rgba(77, 67, 163, 0.06);
-                      border-radius: 8px;
-                      width: 200px;
-                      height: 200px;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      margin-right: 20px;
-                      flex-shrink: 0;
-                  }
+                .data__icon {
+                    @media (max-width: 1024px) {
+                        transform: scale(0.75);
+                    }
+
+                    @media (max-width: 739px) {
+                        transform: scale(0.55);
+                    }
+                }
+
+                @media (max-width: 1024px) {
+                    width: 148px;
+                    height: 148px;
+                }
+
+                @media (max-width: 739px) {
+                    width: 80px;
+                    height: 80px;
+                    margin-right: 8px;
+                }
+            }
 		}
 
 }
