@@ -27,6 +27,11 @@ body {
     font-size: 18px;
     line-height: 32px;
     font-weight: 400;
+
+    &.scroll-lock {
+        overflow: hidden;
+        padding-right: var(--scrollbar-width);
+    }
 }
 
 .container {

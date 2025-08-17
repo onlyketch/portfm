@@ -245,6 +245,7 @@
 
             &-link {
                 display: block;
+                text-decoration: none;
                 width: 70px;
                 height: 70px;
                 background-color: $silver;
@@ -341,7 +342,7 @@
 
     &__mail-link {
         position: absolute;
-        top: 0;
+        top: 3px;
         right: 70px;
         width: 20px;
         height: 16px;
@@ -349,6 +350,9 @@
         transition: color .3s ease-in;
 
         .data__icon {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 20px;
             height: 16px;
         }
@@ -363,6 +367,21 @@
 
         @media (max-width: 739px) {
             right: 24px;
+        }
+    }
+
+    &__blur {
+        display: none;
+        position: absolute;
+        bottom: 64px;
+        right: 6px;
+        width: 150px;
+        height: 150px;
+        background-color: #8C83A4;
+        filter: blur(120px);
+
+        @media (max-width: 739px) {
+            display: block;
         }
     }
 
